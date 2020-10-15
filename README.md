@@ -1,7 +1,7 @@
 <!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Gray code decoder
+# Gray code decoder using Configurable Logic Cell (CLC)
 
 This project demonstrate the uses of CLCs in real time applications.In this demo we will realize a Gray code decoder using CLCs.
 
@@ -21,7 +21,7 @@ In this demonstration, CLCs of PIC18F47Q10 MCU, LCD mini click from MikroElektro
 <br><a href="https://youtu.be/QVVx6MxxFDU" rel="nofollow"><img src="images/youtube.png" alt= " PIC18-Q10 " width="500"/></a>
 </p>
 
-# Gray Code Decoder Using CLC’s
+# Gray Code Decoder
 This section demonstrates the Gray code Decoder using CLC’s. The 4-bit Gray code Encoder input is taken on GPIO pins and is fed to the CLCs. The CLCs perform the logical operation and generate decoded output in binary format. The following figure shows the block diagram of Gray code Decoder implementation using CLCs of PIC18F47Q10 MCU.
 
 <p align="center">
