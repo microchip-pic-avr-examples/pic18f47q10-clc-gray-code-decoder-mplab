@@ -107,8 +107,8 @@ MCC supports a range of click boards including the LCD mini click.The configurat
 ## Pin Mapping
 
 <p align="center">
-  <img width=600 height=auto src="images/pin_configuration.png">
-  <br>Fig 8 : GCD Pin Configuration<br>
+  <img width=600 height=auto src="images/pinconfig.png">
+  <br>Fig 8 : Pin Configuration<br>
 </p>
 
 **Note: See the Application Note (AN2912) for more detailed information about MCU configuration, pin connections and Gray-code Decoder application.**
