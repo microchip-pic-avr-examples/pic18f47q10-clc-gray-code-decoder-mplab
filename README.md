@@ -18,7 +18,7 @@ The PIC18-Q10 family of microcontrollers (MCUs) has a rich set of Core Independe
 In this demonstration, CLCs of PIC18F47Q10 MCU, LCD mini click from MikroElektronika, and Gray-code Encoder from Grayhill, are used for the Gray-code Decoder implementation. Gray-code has been used in several applications such as position Encoders, Mathematical Puzzle, Genetic algorithms, Boolean circuit minimization, Error correction, communication between clock domains, cycling through states with minimal effort, and so on.
 
 <p align="center">
-<br><a href="https://youtu.be/QVVx6MxxFDU" rel="nofollow"><img src="images/youtube.png" alt= " PIC18-Q10 " width="500"/></a>
+<br><a href="https://youtu.be/eaegUPE8pxI" rel="nofollow"><img src="images/youtube.png" alt= " PIC18-Q10 " width="500"/></a>
 </p>
 
 # Gray Code Decoder
