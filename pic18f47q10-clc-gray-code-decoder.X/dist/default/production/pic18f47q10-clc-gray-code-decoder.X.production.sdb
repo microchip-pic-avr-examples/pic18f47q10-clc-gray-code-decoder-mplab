@@ -1,0 +1,952 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47Q10 ]
+[d frameptr 4065 ]
+"85 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/spi1.c
+[e E355 . `uc
+LCD_CONFIG 0
+SPI1_DEFAULT 1
+]
+"31 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/digpot.c
+[e E13022 . `uc
+LCD 0
+]
+"33 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/expander.c
+[e E13020 . `uc
+LCD 0
+]
+"41 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/drivers/spi_master.c
+[e E355 . `uc
+LCD_CONFIG 0
+SPI1_DEFAULT 1
+]
+"53
+[e E377 . `uc
+LCD 0
+]
+"6 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\application.c
+[v _ApplicationInit ApplicationInit `(v  1 e 1 0 ]
+"15
+[v _GDapplication GDapplication `(v  1 e 1 0 ]
+"40
+[v _User_lcd_writeString User_lcd_writeString `(v  1 e 1 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"72 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"259
+[v _ctoa ctoa `(i  1 s 2 ctoa ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"51 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"58 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/clc1.c
+[v _CLC1_Initialize CLC1_Initialize `(v  1 e 1 0 ]
+"58 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/clc2.c
+[v _CLC2_Initialize CLC2_Initialize `(v  1 e 1 0 ]
+"58 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/clc5.c
+[v _CLC5_Initialize CLC5_Initialize `(v  1 e 1 0 ]
+"58 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/clc6.c
+[v _CLC6_Initialize CLC6_Initialize `(v  1 e 1 0 ]
+"35 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+"40 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/drivers/spi_master.c
+[v _LCD_open LCD_open `T(a  1 e 1 0 ]
+"53
+[v _spi_master_open spi_master_open `(a  1 e 1 0 ]
+"30 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/digpot.c
+[v _digipot_setWiper digipot_setWiper `(v  1 e 1 0 ]
+"32 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/expander.c
+[v _expander_sendByte expander_sendByte `(v  1 e 1 0 ]
+"44
+[v _expander_setup expander_setup `(v  1 e 1 0 ]
+"48
+[v _expander_setOutput expander_setOutput `(v  1 e 1 0 ]
+"29 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/lcd.c
+[v _lcd_sendNibble lcd_sendNibble `(v  1 e 1 0 ]
+"38
+[v _lcd_sendByte lcd_sendByte `(v  1 e 1 0 ]
+"54
+[v _lcd_returnHome lcd_returnHome `(v  1 e 1 0 ]
+"59
+[v _lcd_clearDisplay lcd_clearDisplay `(v  1 e 1 0 ]
+"64
+[v _lcd_setAddr lcd_setAddr `(v  1 e 1 0 ]
+"68
+[v _lcd_writeChar lcd_writeChar `(v  1 e 1 0 ]
+"83
+[v _lcd_setContrast lcd_setContrast `(v  1 e 1 0 ]
+"87
+[v _lcd_setup lcd_setup `(v  1 e 1 0 ]
+"50 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"63
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"77
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"70 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"85
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+"100
+[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
+"105
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+"113
+[v _SPI1_ExchangeBlock SPI1_ExchangeBlock `(v  1 e 1 0 ]
+"126
+[v _SPI1_WriteBlock SPI1_WriteBlock `(v  1 e 1 0 ]
+"135
+[v _SPI1_ReadBlock SPI1_ReadBlock `(v  1 e 1 0 ]
+"144
+[v _SPI1_WriteByte SPI1_WriteByte `(v  1 e 1 0 ]
+"149
+[v _SPI1_ReadByte SPI1_ReadByte `(uc  1 e 1 0 ]
+"53 C:/Users/i62418/.mchp_packs/Microchip/PIC18F-Q_DFP/1.8.154/xc8\pic\include\proc\pic18f47q10.h
+[v _CLCIN0PPS CLCIN0PPS `VEuc  1 e 1 @3615 ]
+"119
+[v _CLCIN1PPS CLCIN1PPS `VEuc  1 e 1 @3616 ]
+"185
+[v _CLCIN2PPS CLCIN2PPS `VEuc  1 e 1 @3617 ]
+"251
+[v _CLCIN3PPS CLCIN3PPS `VEuc  1 e 1 @3618 ]
+"581
+[v _CLC1CON CLC1CON `VEuc  1 e 1 @3623 ]
+[s S51 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 INTN 1 0 :1:3 
+`uc 1 INTP 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"614
+[s S58 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+]
+[s S266 . 1 `uc 1 LC1MODE 1 0 :3:0 
+`uc 1 LC1INTN 1 0 :1:3 
+`uc 1 LC1INTP 1 0 :1:4 
+`uc 1 LC1OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 LC1EN 1 0 :1:7 
+]
+[s S273 . 1 `uc 1 LC1MODE0 1 0 :1:0 
+`uc 1 LC1MODE1 1 0 :1:1 
+`uc 1 LC1MODE2 1 0 :1:2 
+]
+[u S277 . 1 `S51 1 . 1 0 `S58 1 . 1 0 `S266 1 . 1 0 `S273 1 . 1 0 ]
+[v _CLC1CONbits CLC1CONbits `VES277  1 e 1 @3623 ]
+"699
+[v _CLC1POL CLC1POL `VEuc  1 e 1 @3624 ]
+"777
+[v _CLC1SEL0 CLC1SEL0 `VEuc  1 e 1 @3625 ]
+"905
+[v _CLC1SEL1 CLC1SEL1 `VEuc  1 e 1 @3626 ]
+"1033
+[v _CLC1SEL2 CLC1SEL2 `VEuc  1 e 1 @3627 ]
+"1161
+[v _CLC1SEL3 CLC1SEL3 `VEuc  1 e 1 @3628 ]
+"1289
+[v _CLC1GLS0 CLC1GLS0 `VEuc  1 e 1 @3629 ]
+"1401
+[v _CLC1GLS1 CLC1GLS1 `VEuc  1 e 1 @3630 ]
+"1513
+[v _CLC1GLS2 CLC1GLS2 `VEuc  1 e 1 @3631 ]
+"1625
+[v _CLC1GLS3 CLC1GLS3 `VEuc  1 e 1 @3632 ]
+"1737
+[v _CLC2CON CLC2CON `VEuc  1 e 1 @3633 ]
+"1770
+[s S198 . 1 `uc 1 LC2MODE 1 0 :3:0 
+`uc 1 LC2INTN 1 0 :1:3 
+`uc 1 LC2INTP 1 0 :1:4 
+`uc 1 LC2OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 LC2EN 1 0 :1:7 
+]
+[s S205 . 1 `uc 1 LC2MODE0 1 0 :1:0 
+`uc 1 LC2MODE1 1 0 :1:1 
+`uc 1 LC2MODE2 1 0 :1:2 
+]
+[u S209 . 1 `S51 1 . 1 0 `S58 1 . 1 0 `S198 1 . 1 0 `S205 1 . 1 0 ]
+[v _CLC2CONbits CLC2CONbits `VES209  1 e 1 @3633 ]
+"1855
+[v _CLC2POL CLC2POL `VEuc  1 e 1 @3634 ]
+"1933
+[v _CLC2SEL0 CLC2SEL0 `VEuc  1 e 1 @3635 ]
+"2061
+[v _CLC2SEL1 CLC2SEL1 `VEuc  1 e 1 @3636 ]
+"2189
+[v _CLC2SEL2 CLC2SEL2 `VEuc  1 e 1 @3637 ]
+"2317
+[v _CLC2SEL3 CLC2SEL3 `VEuc  1 e 1 @3638 ]
+"2445
+[v _CLC2GLS0 CLC2GLS0 `VEuc  1 e 1 @3639 ]
+"2557
+[v _CLC2GLS1 CLC2GLS1 `VEuc  1 e 1 @3640 ]
+"2669
+[v _CLC2GLS2 CLC2GLS2 `VEuc  1 e 1 @3641 ]
+"2781
+[v _CLC2GLS3 CLC2GLS3 `VEuc  1 e 1 @3642 ]
+"5205
+[v _CLC5CON CLC5CON `VEuc  1 e 1 @3663 ]
+"5238
+[s S130 . 1 `uc 1 LC5MODE 1 0 :3:0 
+`uc 1 LC5INTN 1 0 :1:3 
+`uc 1 LC5INTP 1 0 :1:4 
+`uc 1 LC5OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 LC5EN 1 0 :1:7 
+]
+[s S137 . 1 `uc 1 LC5MODE0 1 0 :1:0 
+`uc 1 LC5MODE1 1 0 :1:1 
+`uc 1 LC5MODE2 1 0 :1:2 
+]
+[u S141 . 1 `S51 1 . 1 0 `S58 1 . 1 0 `S130 1 . 1 0 `S137 1 . 1 0 ]
+[v _CLC5CONbits CLC5CONbits `VES141  1 e 1 @3663 ]
+"5323
+[v _CLC5POL CLC5POL `VEuc  1 e 1 @3664 ]
+"5401
+[v _CLC5SEL0 CLC5SEL0 `VEuc  1 e 1 @3665 ]
+"5529
+[v _CLC5SEL1 CLC5SEL1 `VEuc  1 e 1 @3666 ]
+"5657
+[v _CLC5SEL2 CLC5SEL2 `VEuc  1 e 1 @3667 ]
+"5785
+[v _CLC5SEL3 CLC5SEL3 `VEuc  1 e 1 @3668 ]
+"5913
+[v _CLC5GLS0 CLC5GLS0 `VEuc  1 e 1 @3669 ]
+"6025
+[v _CLC5GLS1 CLC5GLS1 `VEuc  1 e 1 @3670 ]
+"6137
+[v _CLC5GLS2 CLC5GLS2 `VEuc  1 e 1 @3671 ]
+"6249
+[v _CLC5GLS3 CLC5GLS3 `VEuc  1 e 1 @3672 ]
+"6361
+[v _CLC6CON CLC6CON `VEuc  1 e 1 @3673 ]
+"6394
+[s S62 . 1 `uc 1 LC6MODE 1 0 :3:0 
+`uc 1 LC6INTN 1 0 :1:3 
+`uc 1 LC6INTP 1 0 :1:4 
+`uc 1 LC6OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 LC6EN 1 0 :1:7 
+]
+[s S69 . 1 `uc 1 LC6MODE0 1 0 :1:0 
+`uc 1 LC6MODE1 1 0 :1:1 
+`uc 1 LC6MODE2 1 0 :1:2 
+]
+[u S73 . 1 `S51 1 . 1 0 `S58 1 . 1 0 `S62 1 . 1 0 `S69 1 . 1 0 ]
+[v _CLC6CONbits CLC6CONbits `VES73  1 e 1 @3673 ]
+"6479
+[v _CLC6POL CLC6POL `VEuc  1 e 1 @3674 ]
+"6557
+[v _CLC6SEL0 CLC6SEL0 `VEuc  1 e 1 @3675 ]
+"6685
+[v _CLC6SEL1 CLC6SEL1 `VEuc  1 e 1 @3676 ]
+"6813
+[v _CLC6SEL2 CLC6SEL2 `VEuc  1 e 1 @3677 ]
+"6941
+[v _CLC6SEL3 CLC6SEL3 `VEuc  1 e 1 @3678 ]
+"7069
+[v _CLC6GLS0 CLC6GLS0 `VEuc  1 e 1 @3679 ]
+"7181
+[v _CLC6GLS1 CLC6GLS1 `VEuc  1 e 1 @3680 ]
+"7293
+[v _CLC6GLS2 CLC6GLS2 `VEuc  1 e 1 @3681 ]
+"7405
+[v _CLC6GLS3 CLC6GLS3 `VEuc  1 e 1 @3682 ]
+"9829
+[v _CLCDATA CLCDATA `VEuc  1 e 1 @3703 ]
+"14169
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3762 ]
+"14379
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3763 ]
+[s S484 . 1 `uc 1 SSPIF 1 0 :1:0 
+`uc 1 BCLIF 1 0 :1:1 
+`uc 1 SSP2IF 1 0 :1:2 
+`uc 1 BCL2IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 TX2IF 1 0 :1:6 
+`uc 1 RC2IF 1 0 :1:7 
+]
+"15780
+[s S493 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S499 . 1 `S484 1 . 1 0 `S493 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES499  1 e 1 @3784 ]
+"16628
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3795 ]
+"16768
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @3797 ]
+"16920
+[v _OSCEN OSCEN `VEuc  1 e 1 @3799 ]
+"16971
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3800 ]
+"17029
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3801 ]
+"17200
+[v _PMD0 PMD0 `VEuc  1 e 1 @3804 ]
+"17277
+[v _PMD1 PMD1 `VEuc  1 e 1 @3805 ]
+"17341
+[v _PMD2 PMD2 `VEuc  1 e 1 @3806 ]
+"17386
+[v _PMD3 PMD3 `VEuc  1 e 1 @3807 ]
+"17448
+[v _PMD4 PMD4 `VEuc  1 e 1 @3808 ]
+"17501
+[v _PMD5 PMD5 `VEuc  1 e 1 @3809 ]
+"18426
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3830 ]
+"18514
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @3832 ]
+"19272
+[v _INLVLA INLVLA `VEuc  1 e 1 @3848 ]
+"19334
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3849 ]
+"19396
+[v _ODCONA ODCONA `VEuc  1 e 1 @3850 ]
+"19458
+[v _WPUA WPUA `VEuc  1 e 1 @3851 ]
+"19520
+[v _ANSELA ANSELA `VEuc  1 e 1 @3852 ]
+"19768
+[v _INLVLB INLVLB `VEuc  1 e 1 @3856 ]
+"19830
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3857 ]
+"19892
+[v _ODCONB ODCONB `VEuc  1 e 1 @3858 ]
+"19954
+[v _WPUB WPUB `VEuc  1 e 1 @3859 ]
+"20016
+[v _ANSELB ANSELB `VEuc  1 e 1 @3860 ]
+"20264
+[v _INLVLC INLVLC `VEuc  1 e 1 @3864 ]
+"20326
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3865 ]
+"20388
+[v _ODCONC ODCONC `VEuc  1 e 1 @3866 ]
+"20450
+[v _WPUC WPUC `VEuc  1 e 1 @3867 ]
+"20512
+[v _ANSELC ANSELC `VEuc  1 e 1 @3868 ]
+"20574
+[v _INLVLD INLVLD `VEuc  1 e 1 @3869 ]
+"20636
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @3870 ]
+"20698
+[v _ODCOND ODCOND `VEuc  1 e 1 @3871 ]
+"20760
+[v _WPUD WPUD `VEuc  1 e 1 @3872 ]
+"20822
+[v _ANSELD ANSELD `VEuc  1 e 1 @3873 ]
+"20947
+[v _INLVLE INLVLE `VEuc  1 e 1 @3877 ]
+"20985
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @3878 ]
+"21017
+[v _ODCONE ODCONE `VEuc  1 e 1 @3879 ]
+"21049
+[v _WPUE WPUE `VEuc  1 e 1 @3880 ]
+"21087
+[v _ANSELE ANSELE `VEuc  1 e 1 @3881 ]
+"27485
+[v _LATA LATA `VEuc  1 e 1 @3970 ]
+[s S571 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"27502
+[u S580 . 1 `S571 1 . 1 0 ]
+[v _LATAbits LATAbits `VES580  1 e 1 @3970 ]
+"27547
+[v _LATB LATB `VEuc  1 e 1 @3971 ]
+"27609
+[v _LATC LATC `VEuc  1 e 1 @3972 ]
+"27671
+[v _LATD LATD `VEuc  1 e 1 @3973 ]
+[s S618 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"27688
+[u S627 . 1 `S618 1 . 1 0 ]
+[v _LATDbits LATDbits `VES627  1 e 1 @3973 ]
+"27733
+[v _LATE LATE `VEuc  1 e 1 @3974 ]
+"27765
+[v _TRISA TRISA `VEuc  1 e 1 @3975 ]
+"27887
+[v _TRISB TRISB `VEuc  1 e 1 @3976 ]
+"28009
+[v _TRISC TRISC `VEuc  1 e 1 @3977 ]
+[s S413 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"28031
+[u S422 . 1 `S413 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES422  1 e 1 @3977 ]
+"28131
+[v _TRISD TRISD `VEuc  1 e 1 @3978 ]
+"28253
+[v _TRISE TRISE `VEuc  1 e 1 @3979 ]
+"28601
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @3985 ]
+"28621
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @3986 ]
+"28811
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @3988 ]
+"29265
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @3989 ]
+[s S434 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"29295
+[s S440 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S445 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S454 . 1 `S434 1 . 1 0 `S440 1 . 1 0 `S445 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES454  1 e 1 @3989 ]
+"29385
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @3990 ]
+"55 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+[s S401 . 4 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 `uc 1 operation 1 3 ]
+"65 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/spi1.c
+[v _spi1_configuration spi1_configuration `C[2]S401  1 s 8 spi1_configuration ]
+"51 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"78
+} 0
+"50 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"61
+} 0
+"87 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/lcd.c
+[v _lcd_setup lcd_setup `(v  1 e 1 0 ]
+{
+"109
+} 0
+"29
+[v _lcd_sendNibble lcd_sendNibble `(v  1 e 1 0 ]
+{
+[v lcd_sendNibble@nibble nibble `uc  1 a 1 wreg ]
+"30
+[v lcd_sendNibble@packet packet `uc  1 a 1 16 ]
+"29
+[v lcd_sendNibble@nibble nibble `uc  1 a 1 wreg ]
+[v lcd_sendNibble@RSbit RSbit `a  1 p 1 13 ]
+[v lcd_sendNibble@nibble nibble `uc  1 a 1 15 ]
+"36
+} 0
+"44 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/expander.c
+[v _expander_setup expander_setup `(v  1 e 1 0 ]
+{
+"46
+} 0
+"70 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"77 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"55 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"135
+} 0
+"63 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"58 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/clc6.c
+[v _CLC6_Initialize CLC6_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"58 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/clc5.c
+[v _CLC5_Initialize CLC5_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"58 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/clc2.c
+[v _CLC2_Initialize CLC2_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"58 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/clc1.c
+[v _CLC1_Initialize CLC1_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"15 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\application.c
+[v _GDapplication GDapplication `(v  1 e 1 0 ]
+{
+"17
+[v GDapplication@lcdDataBuffer lcdDataBuffer `[8]uc  1 a 8 20 ]
+"19
+[v GDapplication@degree degree `us  1 a 2 28 ]
+"18
+[v GDapplication@clcData clcData `uc  1 a 1 30 ]
+"38
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S1297 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S1297  1 a 6 14 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 12 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 0 ]
+[v sprintf@fmt fmt `*.32Cuc  1 p 2 2 ]
+"23
+} 0
+"1390 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1393
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 92 ]
+[s S1323 _IO_FILE 0 ]
+"1390
+[v vfprintf@fp fp `*.39S1323  1 p 2 86 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 88 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 90 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 73 ]
+"695
+[v vfpfcnvrt@done done `i  1 a 2 81 ]
+"694
+[v vfpfcnvrt@c c `uc  1 a 1 85 ]
+[s S1323 _IO_FILE 0 ]
+"692
+[v vfpfcnvrt@fp fp `*.39S1323  1 p 2 63 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 65 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 67 ]
+"1387
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"290
+[v dtoa@n n `o  1 a 8 53 ]
+"289
+[v dtoa@i i `i  1 a 2 61 ]
+[v dtoa@s s `i  1 a 2 51 ]
+[v dtoa@w w `i  1 a 2 49 ]
+[v dtoa@p p `i  1 a 2 47 ]
+[s S1323 _IO_FILE 0 ]
+"287
+[v dtoa@fp fp `*.39S1323  1 p 2 27 ]
+[v dtoa@d d `o  1 p 8 29 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 25 ]
+[v pad@i i `i  1 a 2 23 ]
+[s S1323 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S1323  1 p 2 16 ]
+[v pad@buf buf `*.39uc  1 p 2 18 ]
+[v pad@p p `i  1 p 2 20 ]
+"95
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.39Cuc  1 a 2 2 ]
+"5
+[v strlen@s s `*.39Cuc  1 p 2 0 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 14 ]
+"10
+[v fputs@c c `uc  1 a 1 13 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 9 ]
+[s S1297 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S1297  1 p 2 11 ]
+"19
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 18 ]
+"4
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 17 ]
+[v ___aomod@counter counter `uc  1 a 1 16 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 0 ]
+[v ___aomod@divisor divisor `o  1 p 8 8 ]
+"36
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 18 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 17 ]
+[v ___aodiv@counter counter `uc  1 a 1 16 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 0 ]
+[v ___aodiv@divisor divisor `o  1 p 8 8 ]
+"43
+} 0
+"259 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\doprnt.c
+[v _ctoa ctoa `(i  1 s 2 ctoa ]
+{
+"261
+[v ctoa@w w `i  1 a 2 15 ]
+[v ctoa@l l `i  1 a 2 13 ]
+[s S1323 _IO_FILE 0 ]
+"259
+[v ctoa@fp fp `*.39S1323  1 p 2 9 ]
+[v ctoa@c c `uc  1 p 1 11 ]
+"283
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[s S1297 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S1297  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 20 ]
+[v atoi@neg neg `i  1 a 2 13 ]
+"4
+[v atoi@s s `*.32Cuc  1 p 2 7 ]
+"16
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 0 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 0 ]
+"8
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"6 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\application.c
+[v _ApplicationInit ApplicationInit `(v  1 e 1 0 ]
+{
+"12
+} 0
+"83 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/lcd.c
+[v _lcd_setContrast lcd_setContrast `(v  1 e 1 0 ]
+{
+[v lcd_setContrast@contrast contrast `uc  1 a 1 wreg ]
+[v lcd_setContrast@contrast contrast `uc  1 a 1 wreg ]
+[v lcd_setContrast@contrast contrast `uc  1 a 1 10 ]
+"85
+} 0
+"30 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/digpot.c
+[v _digipot_setWiper digipot_setWiper `(v  1 e 1 0 ]
+{
+[v digipot_setWiper@val val `uc  1 a 1 wreg ]
+"33
+[v digipot_setWiper@cmd cmd `[2]uc  1 a 2 8 ]
+"30
+[v digipot_setWiper@val val `uc  1 a 1 wreg ]
+[v digipot_setWiper@val val `uc  1 a 1 7 ]
+"39
+} 0
+"59 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/lcd.c
+[v _lcd_clearDisplay lcd_clearDisplay `(v  1 e 1 0 ]
+{
+"62
+} 0
+"40 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\application.c
+[v _User_lcd_writeString User_lcd_writeString `(v  1 e 1 0 ]
+{
+"42
+[v User_lcd_writeString@i i `uc  1 a 1 28 ]
+"40
+[v User_lcd_writeString@string string `*.34uc  1 p 2 22 ]
+[v User_lcd_writeString@row row `uc  1 p 1 24 ]
+[v User_lcd_writeString@column column `uc  1 p 1 25 ]
+"49
+} 0
+"68 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/lcd.c
+[v _lcd_writeChar lcd_writeChar `(v  1 e 1 0 ]
+{
+[v lcd_writeChar@character character `uc  1 a 1 wreg ]
+[v lcd_writeChar@character character `uc  1 a 1 wreg ]
+[v lcd_writeChar@character character `uc  1 a 1 20 ]
+"70
+} 0
+"64
+[v _lcd_setAddr lcd_setAddr `(v  1 e 1 0 ]
+{
+[v lcd_setAddr@row row `uc  1 a 1 wreg ]
+[v lcd_setAddr@row row `uc  1 a 1 wreg ]
+[v lcd_setAddr@character character `uc  1 p 1 20 ]
+[v lcd_setAddr@row row `uc  1 a 1 21 ]
+"66
+} 0
+"54
+[v _lcd_returnHome lcd_returnHome `(v  1 e 1 0 ]
+{
+"57
+} 0
+"38
+[v _lcd_sendByte lcd_sendByte `(v  1 e 1 0 ]
+{
+[v lcd_sendByte@byte byte `uc  1 a 1 wreg ]
+"42
+[v lcd_sendByte@packetLow packetLow `uc  1 a 1 19 ]
+"41
+[v lcd_sendByte@packetHigh packetHigh `uc  1 a 1 18 ]
+"40
+[v lcd_sendByte@nibbleLow nibbleLow `uc  1 a 1 16 ]
+"39
+[v lcd_sendByte@nibbleHigh nibbleHigh `uc  1 a 1 15 ]
+"38
+[v lcd_sendByte@byte byte `uc  1 a 1 wreg ]
+[v lcd_sendByte@RSbit RSbit `a  1 p 1 13 ]
+[v lcd_sendByte@byte byte `uc  1 a 1 17 ]
+"52
+} 0
+"48 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/LCDMiniDrivers/expander.c
+[v _expander_setOutput expander_setOutput `(v  1 e 1 0 ]
+{
+[v expander_setOutput@output output `uc  1 a 1 wreg ]
+[v expander_setOutput@output output `uc  1 a 1 wreg ]
+[v expander_setOutput@output output `uc  1 a 1 12 ]
+"50
+} 0
+"32
+[v _expander_sendByte expander_sendByte `(v  1 e 1 0 ]
+{
+[v expander_sendByte@addr addr `uc  1 a 1 wreg ]
+"35
+[v expander_sendByte@cmd cmd `[3]uc  1 a 3 9 ]
+"32
+[v expander_sendByte@addr addr `uc  1 a 1 wreg ]
+[v expander_sendByte@byte byte `uc  1 p 1 7 ]
+[v expander_sendByte@addr addr `uc  1 a 1 8 ]
+"42
+} 0
+"53 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/drivers/spi_master.c
+[v _spi_master_open spi_master_open `(a  1 e 1 0 ]
+{
+[v spi_master_open@config config `E377  1 a 1 wreg ]
+[v spi_master_open@config config `E377  1 a 1 wreg ]
+[v spi_master_open@config config `E377  1 a 1 4 ]
+"60
+} 0
+"40
+[v _LCD_open LCD_open `T(a  1 e 1 0 ]
+{
+"42
+} 0
+"85 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+"87
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 1 ]
+"98
+} 0
+"126
+[v _SPI1_WriteBlock SPI1_WriteBlock `(v  1 e 1 0 ]
+{
+"128
+[v SPI1_WriteBlock@data data `*.39uc  1 a 2 5 ]
+"126
+[v SPI1_WriteBlock@block block `*.39v  1 p 2 1 ]
+[v SPI1_WriteBlock@blockSize blockSize `ui  1 p 2 3 ]
+"133
+} 0
+"105
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+"107
+[v SPI1_ExchangeByte@data data `uc  1 a 1 0 ]
+"111
+} 0
+"100
+[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
+{
+"103
+} 0
+"35 D:\project proposal\pic18f47q10-clc-gray-code-decoder.X\mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+{
+[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
+"39
+} 0

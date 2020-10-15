@@ -3,28 +3,28 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-clc-gray-code-decoder-mplab",
+        "version": "1.0.0",
+        "displayName": "Gray Code Decoder using Configurable Logic Cells (CLC)",
+        "projectName": "pic18f47q10-clc-gray-code-decoder-mplab",
+        "shortDescription": "This demo is developed using PIC18 Q10 family MCU and Curiosity Nano development board. The demo realizes a Gray code decoder using CLCs of PIC18F47Q10 MCU and Curiosity Nano development board.",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "Mplab X IDE",
+            "semverRange": ">=5.40"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+				"name": "XC8",
+				"semverRange": "^2.30"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "^1.8.154"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=4.0.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,26 +32,31 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "PIC18F47Q10",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
+            "MCC",
             [
-               "Peripherals", ""
+               "Peripherals", "CLC"
             ],
-            [
-               "Peripherals", ""
-            ]            			
+			[
+               "Peripherals", "SPI"
+            ]           			
         ],
         "peripherals": [
-            "",""
+            "CLC","SPI"
         ],
         "keywords": [
-            "",
-            ""			
+            "PIC18F47Q10",
+            "MPLAB X",
+			"GCD",
+			"Gray Code Decoder",
+			"Curiosity Nano Board",
+			"SPI",
+			"CLC"
         ],
 		"additionalData": {
 			"longDescription": {
