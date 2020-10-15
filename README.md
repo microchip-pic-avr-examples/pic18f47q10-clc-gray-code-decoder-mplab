@@ -108,7 +108,7 @@ MCC supports a range of click boards including the LCD mini click.The configurat
 
 <p align="center">
   <img width=600 height=auto src="images/pin_configuration.png">
-  <br>Table 1 : GCD Pin Configuration<br>
+  <br>Fig 8 : GCD Pin Configuration<br>
 </p>
 
 **Note: See the Application Note (AN2912) for more detailed information about MCU configuration, pin connections and Gray-code Decoder application.**
@@ -118,14 +118,14 @@ The following figure shows the detailed information of the hardware setup.
 
 <p align="center">
   <img width=600 height=auto src="images/hardware_setup.png">
-  <br>Fig 8 : Hardware Setup<br>
+  <br>Fig 9 : Hardware Setup<br>
 </p>
 
 Gray-code Decoder demonstration needs input in Gray-code format and the output data in binary format. Input to the Gray-code Decoder is given by the Grayhill Encoder module, output of the Decoder is fed to onboard LEDs to show the output in binary format, as well as CLCs output register is read to show the output on LCD in decimal format.
 
 The required hardware connections are shown in the preceding figure. The figure consists of Gray-code Encoder, LCD mini click, and Curiosity HPC board.
 
-Table 1 consists of the necessary pin mapping information of Gray-code Decoder application.
+Table consists of the necessary pin mapping information of Gray-code Decoder application.
 
 ## Operation
 
@@ -136,7 +136,7 @@ Table 1 consists of the necessary pin mapping information of Gray-code Decoder a
 
 <p align="center">
   <img width=600 height=auto src="images/hardware_setup_1.png">
-  <br>Fig 9 : Hardware Setup<br>
+  <br>Fig 10 : Hardware Setup<br>
 </p>
 
 * After running the program, the initial position of the switch on mechanical encoder is at 0. Hence, the text/data that is displayed on the LCD mini click is **“Angle: 0° Decoded value:00”** as shown in figure above.
@@ -146,35 +146,35 @@ Table 1 consists of the necessary pin mapping information of Gray-code Decoder a
 
 <p align="center">
   <img width=600 height=auto src="images/rotating_gray_code_encoder_knob.png">
-  <br>Fig 10 : Rotating Gray Code Encoder Knob<br>
+  <br>Fig 11 : Rotating Gray Code Encoder Knob<br>
 </p>
 
 * Rotate the knob by one step in the clockwise direction to set the position to 2. The eqvuivalent position value (in binary form) and its position angle are displayed on the LCD as **“Angle: 45° Decoded value:02”**.
 
 <p align="center">
   <img width=600 height=auto src="images/rotating_gray_code_encoder_knob_cw.png">
-  <br>Fig 11 : Rotating Gray Code Encoder Knob in Clockwise Direction<br>
+  <br>Fig 12 : Rotating Gray Code Encoder Knob in Clockwise Direction<br>
 </p>
 
 * Rotate the knob by one step in the clockwise direction to set the position to 3. The equivalent position value (in binary form) and its position angle are displayed on the LCD as **“Angle: 67.50° Decoded value:03”**.
 
 <p align="center">
   <img width=600 height=auto src="images/rotating_gray_code_encoder_knob_cw_1.png">
-  <br>Fig 12 : Rotating Gray Code Encoder Knob in Clockwise Direction<br>
+  <br>Fig 13 : Rotating Gray Code Encoder Knob in Clockwise Direction<br>
 </p>
 
 * Rotate the knob by one step in the clockwise direction to set the position to 4. The equivalent position value (in binary form) and its position angle are displayed on the LCD as **“Angle: 90° Decoded value:04”**.
 
 <p align="center">
   <img width=600 height=auto src="images/rotating_gray_code_encoder_knob_cw_2.png">
-  <br>Fig 13 : Rotating Gray Code Encoder Knob in Clockwise Direction<br>
+  <br>Fig 14 : Rotating Gray Code Encoder Knob in Clockwise Direction<br>
 </p>
 
 * Rotate the knob in the clockwise direction to set the position to 15. The equivalent position value (in binary form) and its position angle are displayed on the LCD as **"Angle: 337.50° Decoded value:15"**.
 
 <p align="center">
   <img width=600 height=auto src="images/rotating_gray_code_encoder_knob_cw_3.png">
-  <br>Fig 14 : Rotating Gray Code Encoder Knob in Clockwise Direction<br>
+  <br>Fig 15 : Rotating Gray Code Encoder Knob in Clockwise Direction<br>
 </p>
 
 * If the knob is rotated by one step in the clockwise direction and when the position angle on the encoder is at 337.50°, the position angle reaches to 0° and the cycle repeats. Whereas if the knob is rotated in anti-clockwise direction, the rotation angle decreases by 22.5° for each change in step and reaches to 0°.
