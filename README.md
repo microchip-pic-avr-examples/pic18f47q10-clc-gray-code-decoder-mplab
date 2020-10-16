@@ -1,7 +1,7 @@
 <!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Gray code decoder using Configurable Logic Cell (CLC)
+# Gray Code Decoder using Configurable Logic Cell(CLC)
 
 This project demonstrate the uses of CLCs in real time applications.In this demo we will realize a Gray code decoder using CLCs.
 
@@ -15,10 +15,10 @@ The PIC18-Q10 family of microcontrollers (MCUs) has a rich set of Core Independe
 - [Configurable Logic Cells Tips 'n' Tricks](http://ww1.microchip.com/downloads/en/devicedoc/41631b.pdf "Configurable Logic Cells Tips 'n' Tricks")
 
 ## Description
-In this demonstration, CLCs of PIC18F47Q10 MCU, LCD mini click from MikroElektronika, and Gray-code Encoder from Grayhill, are used for the Gray-code Decoder implementation. Gray-code has been used in several applications such as position Encoders, Mathematical Puzzle, Genetic algorithms, Boolean circuit minimization, Error correction, communication between clock domains, cycling through states with minimal effort, and so on.
+In this demonstration, CLCs of PIC18F47Q10 MCU, LCD mini click from MikroElektronika, and Gray-code Encoder from Grayhill are used for the Gray-code Decoder implementation. Gray-code has been used in several applications such as position Encoders, Mathematical Puzzle, Genetic algorithms, Boolean circuit minimization, Error correction, communication between clock domains, cycling through states with minimal effort, and so on.
 
 <p align="center">
-<br><a href="https://youtu.be/eaegUPE8pxI" rel="nofollow"><img src="images/youtube.png" alt= " PIC18-Q10 " width="500"/></a>
+<br><a href="https://youtu.be/z860F5E2qwI" rel="nofollow"><img src="images/youtube.png" alt= " PIC18-Q10 " width="500"/></a>
 </p>
 
 # Gray Code Decoder
@@ -36,20 +36,20 @@ The 4-bit rotary encoder from Grayhill is used for the generation of Gray codes.
   <br>Fig 2 : Rotary Gray code decoder<br>
 </p>
 
-A logic gate-based design is implemented using CLCs of PIC18F47Q10 MCU. The outputs are solved using K-map. The derived logical expressions for Gray code decoder are as follows.
+A logic gate-based design is implemented using CLCs of PIC18F47Q10 MCU. The outputs are solved using K-map. The derived logical expressions for Gray code decoder are as follows:
 * b (3) = g (3)
 * b (2) = g (3) ⊕ g (2)
 * b (1) = b (2) ⊕ g (1)
 * b (0) = b (1) ⊕ g (0)
 
-The output of CLC’s is routed to four on board LED’s of Curiosity HPC board and it is read in firmware to display it on LCD. Mini LCD Click board from mikroElectronika shows the decoded values in decimal and rotary encoder position in degrees.
+Mini LCD Click board from mikroElectronika shows the decoded values in decimal and rotary encoder position in degrees.
 
 
 ## Software Tools
 Microchip’s free IDE, compiler and graphical code generators are used throughout the application firmware development. Following are the tools used for this demo application:
 
-* [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
-* [XC8 Compiler v2.30](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.30")
+* [MPLAB X IDE v5.40.0](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
+* [XC8 Compiler v2.30.0](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.30")
 * [MPLAB Code Configurator (MCC) v4.0.1](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v4.0.1")
 
 **Note: For running the demo, the installed tool versions should be same or later. This example is not tested with previous versions.**
@@ -67,7 +67,7 @@ The following figure shows the system configuration setting in MCC tool.
 </p>
 
 ## CLC Configuration
-The Configurable Logic Cells (CLC’s) are used to decode the encoded Gray-code value by realizing the boolean expressions. This section describes the configuration of CLCs of PIC18F47Q10 MCU using the MCC tool.
+The Configurable Logic Cell(CLC) are used to decode the encoded Gray-code value by realizing the boolean expressions. This section describes the configuration of CLCs of PIC18F47Q10 MCU using the MCC tool.
 
 * CLC 1: OR-XOR
 The following figure shows the CLC 1 in OR-XOR configuration
@@ -102,7 +102,7 @@ The following figure shows the CLC 6 in OR-XOR configuration
 </p>
 
 ## LCD configuration
-MCC supports a range of click boards including the LCD mini click.The configurations needed for LCD mini click are, selection of appropriate SPI source, pins and SPI communication speed. The curiosity HPC board mikroBUS slot 1 is used for LCD, I/O pins for the same is selected through pin manager.
+MCC supports a range of click boards including the LCD mini click.The configurations needed for LCD mini click are, selection of appropriate SPI source, pins and SPI communication speed. The curiosity Nano base board mikroBUS slot 1 is used for LCD, I/O pins for the same is selected through pin manager.
 
 ## Pin Mapping
 
@@ -110,8 +110,6 @@ MCC supports a range of click boards including the LCD mini click.The configurat
   <img width=600 height=auto src="images/pinmanager.png">
   <br>Fig 8 : Pin Configuration<br>
 </p>
-
-**Note: See the Application Note (AN2912) for more detailed information about MCU configuration, pin connections and Gray-code Decoder application.**
 
 ## Hardware setup
 The following figure shows the detailed information of the hardware setup.
@@ -121,16 +119,16 @@ The following figure shows the detailed information of the hardware setup.
   <br>Fig 9 : Hardware Setup<br>
 </p>
 
-Gray-code Decoder demonstration needs input in Gray-code format and the output data in binary format. Input to the Gray-code Decoder is given by the Grayhill Encoder module, output of the Decoder is fed to onboard LEDs to show the output in binary format, as well as CLCs output register is read to show the output on LCD in decimal format.
+Gray-code Decoder demonstration needs input in Gray-code format and the output data in binary format. Input to the Gray-code Decoder is given by the Grayhill Encoder module, output is in binary format and is read through the LCD Display.
 
-The required hardware connections are shown in the preceding figure. The figure consists of Gray-code Encoder, LCD mini click, and Curiosity HPC board.
+The required hardware connections are shown in the preceding figure. The figure consists of Gray-code Encoder, LCD mini click, Curiosity Nano Base for Click boards and PIC18F47Q10 Curiosity Nano Evaluation kit.
 
 Table consists of the necessary pin mapping information of Gray-code Decoder application.
 
 ## Operation
 
-* **Gray Code Decoder Pin Mapping** consists of pin mapping/connection details of the Gray-code Decoder demonstration setup. The hardware connection is made as shown in the Hardware Setup. Power up the curiosity board using micro USB cable.
-* Download the firmware available with this Xpress example page.
+* **Gray Code Decoder Pin Mapping** consists of pin mapping/connection details of the Gray-code Decoder demonstration setup. The hardware connection is made as shown in the Hardware Setup. Power up the curiosity nano base board using micro USB cable.
+* Download the firmware available from the github page link.
 * Build the project using latest version of tools as mentioned in the Software Tools section and load the generated hexadecimal file in to the PIC18F47Q10 MCU.
 * The Encoder used in the demonstration is capable of generating maximum of 15 encoded position values with 22.5° angle of rotation in between them. The rotation can be in clockwise or anti-clockwise direction.
 
