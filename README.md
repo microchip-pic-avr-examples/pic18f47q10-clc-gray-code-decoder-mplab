@@ -7,7 +7,7 @@ This project demonstrate the uses of CLCs in real time applications.In this demo
 
 ## Introduction
 
-The PIC18-Q10 family of microcontrollers (MCUs) has a rich set of Core Independent Peripherals (CIPs) like Analog to Digital Converter with Computation (ADCC), Configurable Logic Cell (CLC)s, Timers, Comparators, and so on. These MCUs are equipped with eight CLCs which provides programmable logic that operates outside the speed limitations of software execution. The CLC is a flexible peripheral that enables the creation of on-chip custom logic functions for PIC® MCUs. This Xpress page describes the implementation of Gray code Decoder using PIC18F47Q10 MCU.
+The PIC18-Q10 family of microcontrollers (MCUs) has a rich set of Core Independent Peripherals (CIPs) like Analog to Digital Converter with Computation (ADCC), Configurable Logic Cell (CLC)s, Timers, Comparators, and so on. These MCUs are equipped with eight CLCs which provides programmable logic that operates outside the speed limitations of software execution. The CLC is a flexible peripheral that enables the creation of on-chip custom logic functions for PIC® MCUs. This readme page describes the implementation of Gray code Decoder using PIC18F47Q10 MCU.
 
 ## Related Application Note(s)
 
@@ -42,7 +42,7 @@ A logic gate-based design is implemented using CLCs of PIC18F47Q10 MCU. The outp
 * b (1) = b (2) ⊕ g (1)
 * b (0) = b (1) ⊕ g (0)
 
-Mini LCD Click board from mikroElectronika shows the decoded values in decimal and rotary encoder position in degrees.
+LCD Mini Click board from mikroElectronika shows the decoded values in decimal and rotary encoder position in degrees.
 
 
 ## Software Tools
