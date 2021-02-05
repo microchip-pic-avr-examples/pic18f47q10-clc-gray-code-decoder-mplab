@@ -9,7 +9,7 @@
         "projectName": "pic18f47q10-clc-gray-code-decoder-mplab",
         "shortDescription": "This demo is developed using PIC18-Q10 family MCU and Curiosity Nano development board. The demo realizes a Gray code decoder using CLCs of PIC18F47Q10 MCU.",
         "ide": {
-            "name": "MPLAB X IDE",
+            "name": "MPLAB X",
             "semverRange": ">=5.40.0"
         },
         "compiler": [
