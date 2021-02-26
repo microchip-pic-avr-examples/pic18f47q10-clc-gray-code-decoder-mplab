@@ -50,11 +50,9 @@
             "CLC","SPI"
         ],
         "keywords": [
-            "PIC18F47Q10",
 			"GCD",
 			"Gray Code Decoder",
-			"Curiosity Nano Board",
-			"Curiosity Nano evaluation kit"
+			"Curiosity Nano"
         ],
 		"additionalData": {
 			"longDescription": {
