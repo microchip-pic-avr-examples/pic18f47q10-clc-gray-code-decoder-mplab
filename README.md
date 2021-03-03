@@ -1,7 +1,7 @@
 <!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Gray Code Decoder using Configurable Logic Cell(CLC) - MPLAB X Project
+# Gray Code Decoder using Configurable Logic Cell(CLC)
 
 This project demonstrate the uses of CLCs in real time applications.In this demo we will realize a Gray code decoder using CLCs.
 
