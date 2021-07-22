@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-clc-gray-code-decoder-mplab",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "displayName": "Gray Code Decoder using Configurable Logic Cell(CLC)",
         "projectName": "pic18f47q10-clc-gray-code-decoder-mplab",
         "shortDescription": "This demo is developed using PIC18-Q10 family MCU and Curiosity Nano development board. The demo realizes a Gray code decoder using CLCs of PIC18F47Q10 MCU.",
@@ -38,7 +38,6 @@
         },
         "author": "Microchip",
         "subcategories": [
-            "MCC",
             [
                "Peripherals", "CLC"
             ],
