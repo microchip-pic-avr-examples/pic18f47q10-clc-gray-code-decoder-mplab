@@ -44,13 +44,19 @@ A logic gate-based design is implemented using CLCs of PIC18F47Q10 MCU. The outp
 
 LCD Mini Click board from mikroElectronika shows the decoded values in decimal and rotary encoder position in degrees.
 
+## Hardware Used
+
+* [PIC18-Q10 MCU](https://www.microchip.com/wwwproducts/en/PIC18F47Q10 "PIC18-Q10 MCU") 40-pin PDIP is used with [Curiosity HPC](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164136 "Curiosity HPC") development board from Microchip.
+* [LCD mini click](https://www.mikroe.com/lcd-mini-click "LCD mini click") board from MikroElektronika.
+* Gray Code Encoder
 
 ## Software Tools
 Microchip’s free IDE, compiler and graphical code generators are used throughout the application firmware development. Following are the tools used for this demo application:
 
-* [MPLAB X IDE v5.40.0](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
-* [XC8 Compiler v2.30.0](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.30")
-* [MPLAB Code Configurator (MCC) v4.0.1](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v4.0.1")
+* MPLAB® X IDE [v5.40.0 or newer](https://www.microchip.com/mplab/mplab-x-ide)
+* XC8 Compiler [v2.30.0 or newer](https://www.microchip.com/mplab/compilers)
+* Microchip PIC18F-Q Series Device Support Pack [v1.8.154 or newer](https://packs.download.microchip.com/#collapse-Microchip-PIC18F-Q-DFP-pdsc)
+* Microchip Code Configurator [v4.0.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator)
 
 **Note: For running the demo, the installed tool versions should be same or later. This example is not tested with previous versions.**
 
